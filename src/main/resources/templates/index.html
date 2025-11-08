@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="vi" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Đăng ký nhận ưu đãi</title>
+    <style>
+        body {font-family: Arial; background:#f4f4f4; text-align:center;}
+        form {background:#fff; padding:20px; width:320px; margin:80px auto; border-radius:10px;
+            box-shadow:0 2px 8px rgba(0,0,0,0.1);}
+        input {width:90%; padding:8px; margin:8px 0; border:1px solid #ccc; border-radius:5px;}
+        button {background:#28a745; color:#fff; border:none; padding:10px 20px; cursor:pointer; border-radius:5px;}
+        button:hover {background:#218838;}
+    </style>
+</head>
+<body>
+<h2>Đăng ký nhận thông tin ưu đãi</h2>
+<form action="/submit" method="post">
+    <input type="text" name="name" placeholder="Họ và tên" required><br>
+    <input type="text" name="phone" placeholder="Số điện thoại" required><br>
+    <input type="text" name="address" placeholder="Địa chỉ" required><br>
+    <button type="submit">Gửi thông tin</button>
+</form>
+</body>
+</html>
