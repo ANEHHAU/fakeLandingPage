@@ -1,5 +1,6 @@
 # Sử dụng image Java chính thức
-FROM openjdk:17-jdk-slim
+FROM eclipse-temurin:17-jdk
+
 
 # Đặt thư mục làm việc trong container
 WORKDIR /app
